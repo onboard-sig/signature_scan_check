@@ -1,0 +1,70 @@
+{
+    "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+    "runs": [
+        {
+            "tool": {
+                "driver": {
+                    "name": "Polaris",
+                    "organization": "Synopsys",
+                    "rules": [
+                        {
+                            "id": "apache tomcat:9.0.41:  ",
+                            "shortDescription": {
+                                "text": "Transitive Dependency: apache tomcat:9.0.41 from  "
+                            },
+                            "fullDescription": {
+                                "text": "apache tomcat:9.0.41 has the following vulnerabilities: [:orange_circle:] CVE-2022-34305, [:orange_circle:] CVE-2021-25329, [:orange_circle:] CVE-2020-9484, [:orange_circle:] BDSA-2024-0396, [:orange_circle:] CVE-2023-46589, [:orange_circle:] CVE-2023-44487, [:yellow_circle:] CVE-2022-23181, [:yellow_circle:] CVE-2023-45648, [:yellow_circle:] CVE-2021-25122, [:yellow_circle:] CVE-2022-42252, [:yellow_circle:] CVE-2022-45143, [:yellow_circle:] CVE-2023-24998, [:yellow_circle:] CVE-2023-28708, [:yellow_circle:] CVE-2023-28709, [:yellow_circle:] CVE-2023-41080, [:yellow_circle:] CVE-2021-30640, [:yellow_circle:] CVE-2021-42340, [:yellow_circle:] CVE-2023-42795, [:yellow_circle:] CVE-2021-41079, [:yellow_circle:] CVE-2024-21733, [:yellow_circle:] CVE-2021-33037, [:yellow_circle:] CVE-2024-23672, [:yellow_circle:] CVE-2024-24549, [:yellow_circle:] CVE-2024-34750, [:large_blue_circle:] CVE-2022-29885, [:large_blue_circle:] CVE-2021-43980"
+                            },
+                            "help": {
+                                "markdown": "\n## Upgrade Guidance\n\n\n\n| **Affected Dependency**  | **Recommended short term version** | **Recommended long term version** |\n| :--- | :--- | :--- |\n| apache tomcat:9.0.41  | 9.0.91  | 10.1.26 |\n\n\n\n[Click Here To See More Details in Polaris](https://pim.altair.synopsys.com/portfolio/portfolios/5f68d659-2afd-4b91-a64d-f5152540e25e/portfolio-items/504dd1d7-c008-4157-8b97-56aef6011888/projects/5b0357fb-85f5-491e-adb6-c70730bba3c3/components/6f5247f2-f6e2-4df4-bd04-7ae9a5b4708f?branchId=f28672e0-634a-4e81-80fe-c8dee63f4340&component=5a7e1c49-9a98-4393-b4e0-8011122bbe2f)\n\n## Vulnerabilities(BDSA,CVE)\n\n \n| **Severity**  | **Vulnerability** | **Summary** | **Solution Available?** | **Workaround Available?** |\n| :--- |:--- | :--- | :--- | :--- |\n| :orange_circle: | [CVE-2022-34305](https://nvd.nist.gov/vuln/detail/CVE-2022-34305) | Improper Neutralization of Script-Related HTML Tags in Web Pages | Yes | Yes |\n| :orange_circle: | [CVE-2021-25329](https://nvd.nist.gov/vuln/detail/CVE-2021-25329) | Insecure Object Deserialization | Yes | - |\n| :orange_circle: | [CVE-2020-9484](https://nvd.nist.gov/vuln/detail/CVE-2020-9484) | Insecure Object Deserialization | - | - |\n| :orange_circle: | [BDSA-2024-0396](https://openhub.net/vulnerabilities/bdsa/BDSA-2024-0396) | Incorrect Default Permissions | Yes | - |\n| :orange_circle: | [CVE-2023-46589](https://nvd.nist.gov/vuln/detail/CVE-2023-46589) | HTTP Request Smuggling | Yes | - |\n| :orange_circle: | [CVE-2023-44487](https://nvd.nist.gov/vuln/detail/CVE-2023-44487) | Uncontrolled Resource Consumption | Yes | Yes |\n| :yellow_circle: | [CVE-2022-23181](https://nvd.nist.gov/vuln/detail/CVE-2022-23181) | Time-of-check Time-of-use (TOCTOU) Race Condition | Yes | - |\n| :yellow_circle: | [CVE-2023-45648](https://nvd.nist.gov/vuln/detail/CVE-2023-45648) | Weak Input Validation | Yes | - |\n| :yellow_circle: | [CVE-2021-25122](https://nvd.nist.gov/vuln/detail/CVE-2021-25122) | Sensitive Data Exposure | Yes | - |\n| :yellow_circle: | [CVE-2022-42252](https://nvd.nist.gov/vuln/detail/CVE-2022-42252) | HTTP Request Smuggling | Yes | Yes |\n| :yellow_circle: | [CVE-2022-45143](https://nvd.nist.gov/vuln/detail/CVE-2022-45143) | Improper Neutralization of Escape, Meta, or Control Sequences | Yes | - |\n| :yellow_circle: | [CVE-2023-24998](https://nvd.nist.gov/vuln/detail/CVE-2023-24998) | Allocation of Resources Without Limits or Throttling | Yes | - |\n| :yellow_circle: | [CVE-2023-28708](https://nvd.nist.gov/vuln/detail/CVE-2023-28708) | Sensitive Data Exposure | Yes | - |\n| :yellow_circle: | [CVE-2023-28709](https://nvd.nist.gov/vuln/detail/CVE-2023-28709) | Allocation of Resources Without Limits or Throttling | Yes | - |\n| :yellow_circle: | [CVE-2023-41080](https://nvd.nist.gov/vuln/detail/CVE-2023-41080) | Open URL Redirect | Yes | - |\n| :yellow_circle: | [CVE-2021-30640](https://nvd.nist.gov/vuln/detail/CVE-2021-30640) | Improper Authentication | Yes | - |\n| :yellow_circle: | [CVE-2021-42340](https://nvd.nist.gov/vuln/detail/CVE-2021-42340) | Missing Release of Memory after Effective Lifetime | Yes | - |\n| :yellow_circle: | [CVE-2023-42795](https://nvd.nist.gov/vuln/detail/CVE-2023-42795) | Sensitive Data Exposure | Yes | - |\n| :yellow_circle: | [CVE-2021-41079](https://nvd.nist.gov/vuln/detail/CVE-2021-41079) | Loop with Unreachable Exit Condition ('Infinite Loop') | Yes | - |\n| :yellow_circle: | [CVE-2024-21733](https://nvd.nist.gov/vuln/detail/CVE-2024-21733) | Sensitive Data Exposure | Yes | - |\n| :yellow_circle: | [CVE-2021-33037](https://nvd.nist.gov/vuln/detail/CVE-2021-33037) | HTTP Request Smuggling | Yes | - |\n| :yellow_circle: | [CVE-2024-23672](https://nvd.nist.gov/vuln/detail/CVE-2024-23672) | Uncontrolled Resource Consumption | Yes | - |\n| :yellow_circle: | [CVE-2024-24549](https://nvd.nist.gov/vuln/detail/CVE-2024-24549) | Weak Input Validation | Yes | - |\n| :yellow_circle: | [CVE-2024-34750](https://nvd.nist.gov/vuln/detail/CVE-2024-34750) | Uncontrolled Resource Consumption | Yes | - |\n| :large_blue_circle: | [CVE-2022-29885](https://nvd.nist.gov/vuln/detail/CVE-2022-29885) | Omission of Security-relevant Information | Yes | Yes |\n| :large_blue_circle: | [CVE-2021-43980](https://nvd.nist.gov/vuln/detail/CVE-2021-43980) | Race Condition due to Improper Synchronization | - | - |\n\n\n\n\n## References\n* Common Weakness Enumeration: [CWE-80](https://cwe.mitre.org/data/definitions/80.html)\n* Common Weakness Enumeration: [CWE-502](https://cwe.mitre.org/data/definitions/502.html)\n* Common Weakness Enumeration: [CWE-276](https://cwe.mitre.org/data/definitions/276.html)\n* Common Weakness Enumeration: [CWE-732](https://cwe.mitre.org/data/definitions/732.html)\n* Common Weakness Enumeration: [CWE-444](https://cwe.mitre.org/data/definitions/444.html)\n* Common Weakness Enumeration: [CWE-400](https://cwe.mitre.org/data/definitions/400.html)\n* Common Weakness Enumeration: [CWE-367](https://cwe.mitre.org/data/definitions/367.html)\n* Common Weakness Enumeration: [CWE-20](https://cwe.mitre.org/data/definitions/20.html)\n* Common Weakness Enumeration: [CWE-200](https://cwe.mitre.org/data/definitions/200.html)\n* Common Weakness Enumeration: [CWE-150](https://cwe.mitre.org/data/definitions/150.html)\n* Common Weakness Enumeration: [CWE-770](https://cwe.mitre.org/data/definitions/770.html)\n* Common Weakness Enumeration: [CWE-601](https://cwe.mitre.org/data/definitions/601.html)\n* Common Weakness Enumeration: [CWE-287](https://cwe.mitre.org/data/definitions/287.html)\n* Common Weakness Enumeration: [CWE-401](https://cwe.mitre.org/data/definitions/401.html)\n* Common Weakness Enumeration: [CWE-459](https://cwe.mitre.org/data/definitions/459.html)\n* Common Weakness Enumeration: [CWE-835](https://cwe.mitre.org/data/definitions/835.html)\n* Common Weakness Enumeration: [CWE-209](https://cwe.mitre.org/data/definitions/209.html)\n* Common Weakness Enumeration: [CWE-755](https://cwe.mitre.org/data/definitions/755.html)\n* Common Weakness Enumeration: [CWE-223](https://cwe.mitre.org/data/definitions/223.html)\n* Common Weakness Enumeration: [CWE-362](https://cwe.mitre.org/data/definitions/362.html)\n\n",
+                                "text": "apache tomcat:9.0.41 has the following vulnerabilities: [:orange_circle:] CVE-2022-34305, [:orange_circle:] CVE-2021-25329, [:orange_circle:] CVE-2020-9484, [:orange_circle:] BDSA-2024-0396, [:orange_circle:] CVE-2023-46589, [:orange_circle:] CVE-2023-44487, [:yellow_circle:] CVE-2022-23181, [:yellow_circle:] CVE-2023-45648, [:yellow_circle:] CVE-2021-25122, [:yellow_circle:] CVE-2022-42252, [:yellow_circle:] CVE-2022-45143, [:yellow_circle:] CVE-2023-24998, [:yellow_circle:] CVE-2023-28708, [:yellow_circle:] CVE-2023-28709, [:yellow_circle:] CVE-2023-41080, [:yellow_circle:] CVE-2021-30640, [:yellow_circle:] CVE-2021-42340, [:yellow_circle:] CVE-2023-42795, [:yellow_circle:] CVE-2021-41079, [:yellow_circle:] CVE-2024-21733, [:yellow_circle:] CVE-2021-33037, [:yellow_circle:] CVE-2024-23672, [:yellow_circle:] CVE-2024-24549, [:yellow_circle:] CVE-2024-34750, [:large_blue_circle:] CVE-2022-29885, [:large_blue_circle:] CVE-2021-43980"
+                            },
+                            "properties": {
+                                "security-severity": "8.9",
+                                "tags": [
+                                    "security",
+                                    "open_source_analysis",
+                                    "transitive_dependency",
+                                    "patch_available",
+                                    "external/cwe/cwe-80",
+                                    "external/cwe/cwe-502",
+                                    "external/cwe/cwe-276",
+                                    "external/cwe/cwe-732",
+                                    "external/cwe/cwe-444",
+                                    "external/cwe/cwe-400"
+                                ]
+                            },
+                            "defaultConfiguration": {
+                                "level": "error"
+                            }
+                        }
+                    ]
+                }
+            },
+            "results": [
+                {
+                    "message": {
+                        "text": "This dependency has vulnerabilities. For detailed information regarding the vulnerabilities, take a look at the BDSAs and/or CVEs below."
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file://unknown-file"
+                                },
+                                "region": {
+                                    "startLine": 1
+                                }
+                            }
+                        }
+                    ],
+                    "ruleId": "apache tomcat:9.0.41:  ",
+                    "partialFingerprints": {
+                        "ruleIdLocationHash/v1": "e673d1e455cab8a9cf7975d70ff54e13082d859f5a7590104f8385bbfe733204"
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "2.1.0"
+}
